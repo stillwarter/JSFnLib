@@ -8,8 +8,24 @@
  * 原文链接：https://blog.csdn.net/weixin_43534452/article/details/132210671
  *
  * 而使用getBoundingClientRect().top 这个api可以直接获取到顶部的值
+ * 原文链接：https://blog.csdn.net/qq_43291759/article/details/115700341
  */
-
 function getToTopdis(dom) {
   return dom.getBoundingClientRect().top;
 }
+
+/**
+ * 滚动效果
+ * js 有多种api可以滚动，scollTo，scollby等等
+ * scrollTo 方法将页面滚动到指定的坐标位置。它会将页面的滚动条直接移动到指定的位置，不管当前的滚动位置在哪里。
+ * scrollBy 方法将页面相对于当前的滚动位置进行滚动。它会根据指定的像素数，在当前滚动位置的基础上进行水平或垂直方向的滚动。
+ * -----
+ * demo
+ *  const body = document.documentElement;
+    const options = {
+    top: this.getToTopDis(qdom),
+    left: 0,
+    behavior: "smooth",
+    };
+    body.scrollBy(options);
+ */
