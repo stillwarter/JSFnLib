@@ -1,5 +1,5 @@
 /**
- * 滚到顶部 scrollTo
+ * 滚到顶部 scrollTod
  */
 export function toTop(){
     const body = document.documentElement
